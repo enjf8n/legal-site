@@ -1,0 +1,26 @@
+﻿<!doctype html>
+<html lang="ru" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты | ЮрПартнер</title>
+    <meta name="description" content="Контакты юридической компании ЮрПартнер: телефон, адрес, форма и карта проезда." />
+    <meta property="og:type" content="website" /><meta property="og:title" content="Контакты — ЮрПартнер" /><meta property="og:description" content="Свяжитесь с юристами по банкротству и арбитражу." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config={theme:{extend:{colors:{wine:'#800020',sand:'#E6D5B8',ink:'#333333'},fontFamily:{heading:['Merriweather','serif'],body:['Inter','sans-serif']}}}};</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":["LegalService","LocalBusiness"],"name":"ЮрПартнер","telephone":"+7-495-000-00-00","address":{"@type":"PostalAddress","streetAddress":"ул. Пример, 10","addressLocality":"Москва","addressCountry":"RU"}}</script>
+  </head>
+  <body class="bg-stone-50 font-body text-ink overflow-x-hidden">
+    <header x-data="{open:false}" class="sticky top-0 z-50 border-b border-sand/60 bg-white/95 backdrop-blur"><div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8"><a href="index.html" class="font-heading text-xl text-wine">ЮрПартнер</a><button @click="open=!open" class="rounded border border-sand px-3 py-2 text-sm font-semibold lg:hidden">Меню</button><nav class="hidden gap-6 text-sm font-medium lg:flex"><a href="index.html" class="hover:text-wine">Главная</a><a href="bankruptcy.html" class="hover:text-wine">Банкротство</a><a href="arbitration.html" class="hover:text-wine">Арбитраж</a><a href="team.html" class="hover:text-wine">Команда</a><a href="contact.html" class="text-wine">Контакты</a></nav></div><nav x-show="open" x-transition class="space-y-2 border-t border-sand/60 bg-white px-4 py-4 lg:hidden"><a href="index.html" class="block">Главная</a><a href="bankruptcy.html" class="block">Банкротство</a><a href="arbitration.html" class="block">Арбитраж</a><a href="team.html" class="block">Команда</a><a href="contact.html" class="block text-wine">Контакты</a></nav></header>
+    <main class="mx-auto max-w-7xl px-4 py-12 lg:px-8">
+      <h1 class="font-heading text-4xl text-wine">Контакты</h1>
+      <div class="mt-8 grid gap-6 lg:grid-cols-2">
+        <section class="border border-sand/60 bg-white p-6"><h2 class="font-heading text-2xl text-wine">Связаться с нами</h2><p class="mt-3">Телефон: <a class="text-wine underline" href="tel:+74950000000">+7 (495) 000-00-00</a></p><p class="mt-2">Email: info@example-legal.ru</p><p class="mt-2">Адрес: Москва, ул. Пример, 10</p><form class="js-prevent-submit mt-4 space-y-3"><input required type="text" class="w-full border border-sand px-3 py-2" placeholder="Имя" /><input required type="tel" class="w-full border border-sand px-3 py-2" placeholder="+7 (___) ___-__-__" /><textarea required class="w-full border border-sand px-3 py-2" rows="4" placeholder="Опишите вопрос"></textarea><button type="submit" class="w-full bg-wine px-4 py-3 font-semibold text-white">Отправить</button><p class="js-success-message hidden text-sm text-green-700">Сообщение отправлено.</p></form></section>
+        <section class="js-lazy-map border border-sand/60 bg-white p-2"><iframe title="Карта" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A7f8bd9a8d9fef0d8e1a93c1fd4fca4d1d93e7c3e9d1a7f4f07c317f1b69b9a31&amp;source=constructor" class="h-[420px] w-full" loading="lazy" allowfullscreen></iframe></section>
+      </div>
+    </main>
+    <footer class="border-t border-sand/60 bg-white"><div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-8 text-sm lg:flex-row lg:justify-between lg:px-8"><p>© 2026 ЮрПартнер</p><p>ИНН 7700000000 · ОГРН 1207700000000</p></div></footer>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script><script defer src="assets/js/main.js"></script><script defer src="assets/js/map-lazy.js"></script>
+  </body>
+</html>

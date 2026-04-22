@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ru" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЮрПартнер | Банкротство физлиц и арбитраж</title>
+    <meta
+      name="description"
+      content="Юридическая компания по банкротству физлиц и арбитражным спорам. Бесплатная первичная консультация и защита в суде."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ЮрПартнер — юридическая компания" />
+    <meta property="og:description" content="Банкротство физлиц и арбитражные споры. Консервативный подход, прозрачные условия." />
+    <meta property="og:url" content="https://example-legal.ru/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1453945619913-79ec89a82c51?q=80&w=1200&auto=format&fit=crop" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              wine: "#800020",
+              sand: "#E6D5B8",
+              ink: "#333333",
+            },
+            fontFamily: {
+              heading: ["Merriweather", "serif"],
+              body: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["LegalService", "LocalBusiness"],
+        "name": "ЮрПартнер",
+        "telephone": "+7-495-000-00-00",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Пример, 10",
+          "addressLocality": "Москва",
+          "addressCountry": "RU"
+        },
+        "url": "https://example-legal.ru/"
+      }
+    </script>
+  </head>
+  <body class="overflow-x-hidden bg-stone-50 font-body text-ink">
+    <header x-data="{open:false}" class="sticky top-0 z-50 border-b border-sand/60 bg-white/95 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
+        <a href="index.html" class="font-heading text-xl text-wine">ЮрПартнер</a>
+        <button @click="open=!open" class="rounded border border-sand px-3 py-2 text-sm font-semibold lg:hidden">Меню</button>
+        <nav class="hidden gap-6 text-sm font-medium lg:flex">
+          <a href="index.html" class="text-wine">Главная</a>
+          <a href="bankruptcy.html" class="hover:text-wine">Банкротство</a>
+          <a href="arbitration.html" class="hover:text-wine">Арбитраж</a>
+          <a href="team.html" class="hover:text-wine">Команда</a>
+          <a href="contact.html" class="hover:text-wine">Контакты</a>
+        </nav>
+      </div>
+      <nav x-show="open" x-transition class="space-y-2 border-t border-sand/60 bg-white px-4 py-4 lg:hidden">
+        <a href="index.html" class="block text-wine">Главная</a>
+        <a href="bankruptcy.html" class="block">Банкротство</a>
+        <a href="arbitration.html" class="block">Арбитраж</a>
+        <a href="team.html" class="block">Команда</a>
+        <a href="contact.html" class="block">Контакты</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="relative isolate border-b border-sand/50">
+        <video class="absolute inset-0 -z-10 h-full w-full object-cover" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1600&auto=format&fit=crop">
+          <source src="https://cdn.coverr.co/videos/coverr-group-of-lawyers-1589/1080p.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 -z-10 bg-[#2a151bcc]/90"></div>
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 py-20 lg:grid-cols-2 lg:px-8">
+          <div data-aos="fade-up">
+            <p class="text-xs uppercase tracking-[0.24em] text-sand">Юридическая практика с 2012 года</p>
+            <h1 class="mt-3 font-heading text-4xl leading-tight text-white md:text-5xl">Списываем долги законно и защищаем в арбитраже</h1>
+            <p class="mt-5 max-w-xl text-slate-200">Работаем с физлицами, ИП и бизнесом. Стратегия, документы, суд и исполнение — под ключ.</p>
+            <a href="#quiz" class="mt-8 inline-flex border border-sand bg-sand px-6 py-3 text-sm font-semibold text-wine transition hover:bg-transparent hover:text-sand">Получить бесплатную консультацию</a>
+          </div>
+          <form class="js-prevent-submit space-y-4 border border-sand/60 bg-white/95 p-6" data-aos="fade-left">
+            <h2 class="font-heading text-2xl text-wine">Оставьте заявку</h2>
+            <input required class="w-full border border-sand px-3 py-2" type="text" placeholder="Ваше имя" />
+            <input required class="w-full border border-sand px-3 py-2" type="tel" placeholder="+7 (___) ___-__-__" />
+            <button class="w-full bg-wine px-4 py-3 font-semibold text-white hover:bg-[#5e0019]" type="submit">Получить консультацию</button>
+            <p class="js-success-message hidden text-sm text-green-700">Спасибо, заявка принята.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="mx-auto grid max-w-7xl gap-4 border-b border-sand/50 px-4 py-12 md:grid-cols-3 lg:px-8">
+        <article class="border border-sand/60 bg-white p-5">
+          <p class="font-heading text-4xl text-wine">1240+</p>
+          <p class="text-sm text-ink/80">Выигранных дел</p>
+        </article>
+        <article class="border border-sand/60 bg-white p-5">
+          <p class="font-heading text-4xl text-wine">3.6 млрд ₽</p>
+          <p class="text-sm text-ink/80">Списано долгов</p>
+        </article>
+        <article class="border border-sand/60 bg-white p-5">
+          <p class="font-heading text-4xl text-wine">14 лет</p>
+          <p class="text-sm text-ink/80">Практики в судах</p>
+        </article>
+      </section>
+
+      <section x-data="{tab:'citizen'}" class="mx-auto max-w-7xl border-b border-sand/50 px-4 py-12 lg:px-8">
+        <h2 class="font-heading text-3xl text-wine">Кому мы помогаем</h2>
+        <div class="mt-5 flex flex-wrap gap-2">
+          <button @click="tab='citizen'" :class="tab==='citizen' ? 'bg-wine text-white' : 'bg-white'" class="border border-sand px-4 py-2 text-sm">Физлица</button>
+          <button @click="tab='ip'" :class="tab==='ip' ? 'bg-wine text-white' : 'bg-white'" class="border border-sand px-4 py-2 text-sm">ИП</button>
+          <button @click="tab='legal'" :class="tab==='legal' ? 'bg-wine text-white' : 'bg-white'" class="border border-sand px-4 py-2 text-sm">Юрлица</button>
+        </div>
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <article x-show="tab==='citizen'" class="border border-sand/60 bg-white p-5"><h3 class="font-semibold">Банкротство физлиц</h3><p class="mt-2 text-sm text-ink/80">Полное сопровождение до финального судебного акта.</p></article>
+          <article x-show="tab==='ip'" class="border border-sand/60 bg-white p-5"><h3 class="font-semibold">Защита ИП</h3><p class="mt-2 text-sm text-ink/80">Споры с контрагентами, взыскания, налоговые риски.</p></article>
+          <article x-show="tab==='legal'" class="border border-sand/60 bg-white p-5"><h3 class="font-semibold">Арбитраж для бизнеса</h3><p class="mt-2 text-sm text-ink/80">Представляем интересы компании в арбитражных судах.</p></article>
+          <article class="border border-sand/60 bg-white p-5"><h3 class="font-semibold">Юридический аудит</h3><p class="mt-2 text-sm text-ink/80">Минимизируем риски и готовим доказательственную базу.</p></article>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl border-b border-sand/50 px-4 py-12 lg:px-8">
+        <h2 class="mb-6 font-heading text-3xl text-wine">Кейсы из практики</h2>
+        <div class="js-cases-swiper swiper border border-sand/60 bg-white p-5">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide border border-sand/40 p-4"><p class="text-xs uppercase tracking-wider text-wine">Дело №A40-11841/2025</p><h3 class="mt-2 font-semibold">Списано 4.2 млн ₽</h3><p class="mt-2 text-sm text-ink/80">Процедура банкротства завершена с освобождением от долгов.</p></article>
+            <article class="swiper-slide border border-sand/40 p-4"><p class="text-xs uppercase tracking-wider text-wine">Дело №A56-33129/2025</p><h3 class="mt-2 font-semibold">Отказ в иске на 18 млн ₽</h3><p class="mt-2 text-sm text-ink/80">Успешная защита ответчика в сложном арбитражном споре.</p></article>
+            <article class="swiper-slide border border-sand/40 p-4"><p class="text-xs uppercase tracking-wider text-wine">Дело №A75-2440/2024</p><h3 class="mt-2 font-semibold">Снижение неустойки на 72%</h3><p class="mt-2 text-sm text-ink/80">Суд учел нашу позицию по несоразмерности требований.</p></article>
+          </div>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="swiper-pagination !static !w-auto"></div>
+            <div class="flex gap-2">
+              <button class="swiper-button-prev !static !m-0 !h-8 !w-8 rounded border border-sand after:!text-sm"></button>
+              <button class="swiper-button-next !static !m-0 !h-8 !w-8 rounded border border-sand after:!text-sm"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section x-data="{serviceTab:'citizen'}" class="mx-auto max-w-7xl border-b border-sand/50 px-4 py-12 lg:px-8">
+        <h2 class="font-heading text-3xl text-wine">Услуги для граждан и бизнеса</h2>
+        <div class="mt-5 flex flex-wrap gap-2">
+          <button @click="serviceTab='citizen'" :class="serviceTab==='citizen' ? 'bg-wine text-white' : 'bg-white'" class="border border-sand px-4 py-2 text-sm">Услуги для граждан</button>
+          <button @click="serviceTab='business'" :class="serviceTab==='business' ? 'bg-wine text-white' : 'bg-white'" class="border border-sand px-4 py-2 text-sm">Услуги для бизнеса</button>
+        </div>
+        <div class="mt-5 grid gap-4 md:grid-cols-2">
+          <article x-show="serviceTab==='citizen'" class="border border-sand/60 bg-white p-5">
+            <h3 class="font-semibold">Списание долгов и защита от взыскания</h3>
+            <p class="mt-2 text-sm text-ink/80">Ведем дело от диагностики до итогового судебного акта.</p>
+          </article>
+          <article x-show="serviceTab==='business'" class="border border-sand/60 bg-white p-5">
+            <h3 class="font-semibold">Комплексная арбитражная защита</h3>
+            <p class="mt-2 text-sm text-ink/80">Представляем интересы компании на всех стадиях спора.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl border-b border-sand/50 px-4 py-12 lg:px-8">
+        <h2 class="font-heading text-3xl text-wine">Почему нам доверяют</h2>
+        <div class="mt-6 grid gap-4 md:grid-cols-3">
+          <article class="border border-sand/60 bg-white p-5">
+            <h3 class="font-semibold">Гарантии в договоре</h3>
+            <p class="mt-2 text-sm text-ink/80">Закрепляем объем услуг, сроки и финансовые условия до старта.</p>
+          </article>
+          <article class="border border-sand/60 bg-white p-5">
+            <h3 class="font-semibold">Узкая специализация</h3>
+            <p class="mt-2 text-sm text-ink/80">Практика сосредоточена на банкротстве и арбитражных спорах.</p>
+          </article>
+          <article class="border border-sand/60 bg-white p-5">
+            <h3 class="font-semibold">Прозрачная отчетность</h3>
+            <p class="mt-2 text-sm text-ink/80">Регулярно сообщаем статус дела и следующие юридические шаги.</p>
+          </article>
+        </div>
+      </section>
+
+      <section x-data="{q1:false,q2:false,q3:false}" class="mx-auto max-w-7xl border-b border-sand/50 px-4 py-12 lg:px-8">
+        <h2 class="font-heading text-3xl text-wine">FAQ</h2>
+        <div class="mt-6 space-y-3">
+          <article class="border border-sand/60 bg-white">
+            <button @click="q1=!q1" class="flex w-full items-center justify-between px-5 py-4 text-left font-semibold">Можно ли сохранить имущество при банкротстве?<span>+</span></button>
+            <p x-show="q1" class="border-t border-sand/50 px-5 py-4 text-sm text-ink/80">Проводим анализ активов и подбираем законную стратегию защиты имущества.</p>
+          </article>
+          <article class="border border-sand/60 bg-white">
+            <button @click="q2=!q2" class="flex w-full items-center justify-between px-5 py-4 text-left font-semibold">Сколько длится арбитражное дело?<span>+</span></button>
+            <p x-show="q2" class="border-t border-sand/50 px-5 py-4 text-sm text-ink/80">В среднем 4-9 месяцев, в зависимости от сложности и количества заседаний.</p>
+          </article>
+          <article class="border border-sand/60 bg-white">
+            <button @click="q3=!q3" class="flex w-full items-center justify-between px-5 py-4 text-left font-semibold">Есть ли рассрочка оплаты?<span>+</span></button>
+            <p x-show="q3" class="border-t border-sand/50 px-5 py-4 text-sm text-ink/80">Да, фиксируем график платежей в договоре до старта работ.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="quiz" class="mx-auto max-w-7xl border-b border-sand/50 px-4 py-12 lg:px-8">
+        <h2 class="font-heading text-3xl text-wine">Квиз: оценка ситуации за 1 минуту</h2>
+        <div class="js-quiz mt-6 border border-sand/60 bg-white p-6">
+          <form class="js-quiz-form">
+            <div class="js-quiz-step">
+              <p class="mb-3 font-semibold">1. Сумма долга:</p>
+              <select name="debtAmount" data-required-step class="w-full border border-sand px-3 py-2">
+                <option value="">Выберите</option>
+                <option>до 500 тыс. ₽</option>
+                <option>500 тыс. — 2 млн ₽</option>
+                <option>более 2 млн ₽</option>
+              </select>
+              <button type="button" class="js-quiz-next mt-4 border border-sand bg-wine px-5 py-2 text-white">Далее</button>
+            </div>
+            <div class="js-quiz-step hidden">
+              <p class="mb-3 font-semibold">2. Есть ли ипотека?</p>
+              <select name="hasMortgage" data-required-step class="w-full border border-sand px-3 py-2">
+                <option value="">Выберите</option>
+                <option>Да</option>
+                <option>Нет</option>
+              </select>
+              <div class="mt-4 flex gap-2">
+                <button type="button" class="js-quiz-prev border border-sand px-5 py-2">Назад</button>
+                <button type="button" class="js-quiz-next border border-sand bg-wine px-5 py-2 text-white">Далее</button>
+              </div>
+            </div>
+            <div class="js-quiz-step hidden">
+              <p class="mb-3 font-semibold">3. Оставьте телефон:</p>
+              <input required name="phone" type="tel" class="w-full border border-sand px-3 py-2" placeholder="+7 (___) ___-__-__" />
+              <div class="mt-4 flex gap-2">
+                <button type="button" class="js-quiz-prev border border-sand px-5 py-2">Назад</button>
+                <button type="submit" class="border border-sand bg-wine px-5 py-2 text-white">Получить результат</button>
+              </div>
+            </div>
+          </form>
+          <p class="js-quiz-result hidden mt-4 text-sm font-medium text-green-700"></p>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-12 lg:px-8">
+        <h2 class="font-heading text-3xl text-wine">Контакты и проезд</h2>
+        <div class="mt-6 grid gap-6 lg:grid-cols-2">
+          <div class="border border-sand/60 bg-white p-5">
+            <p><strong>Телефон:</strong> <a href="tel:+74950000000" class="text-wine underline">+7 (495) 000-00-00</a></p>
+            <p class="mt-2"><strong>Email:</strong> info@example-legal.ru</p>
+            <p class="mt-2"><strong>Адрес:</strong> Москва, ул. Пример, 10</p>
+          </div>
+          <div class="js-lazy-map border border-sand/60 bg-white p-2">
+            <iframe
+              title="Карта офиса"
+              data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A7f8bd9a8d9fef0d8e1a93c1fd4fca4d1d93e7c3e9d1a7f4f07c317f1b69b9a31&amp;source=constructor"
+              class="h-[320px] w-full"
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-sand/60 bg-white">
+      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-8 text-sm text-ink/80 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <p>© 2026 ЮрПартнер. Все права защищены.</p>
+        <p>ИНН 7700000000 · ОГРН 1207700000000</p>
+      </div>
+    </footer>
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/quiz.js"></script>
+    <script defer src="assets/js/map-lazy.js"></script>
+  </body>
+</html>
